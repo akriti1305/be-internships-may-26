@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "node src/server.js",
-    "test": "node --test",
+    "start": "node src/server.js",
+    "test": "node --test tests/rate-limit.test.js tests/idempotency.test.js",
     "bench": "npx autocannon -c 20 -d 10 -p 3 http://localhost:8080/healthz",
     "fmt": "npx prettier -w ."
   },
   "dependencies": {
-    "better-sqlite3": "^9.4.0",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1"
   },
