@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# SQLite database files (runtime + test artifacts)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# Environment
+.env
+
+# Editor / OS
+.DS_Store
+Thumbs.db
